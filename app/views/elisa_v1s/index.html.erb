@@ -1,0 +1,36 @@
+<h1>Listing elisa_v1s</h1>
+
+<!--<select name="elisa_v1">
+  <% @elisa_v1s.each do |elisa_v1| %>
+      <option value="<%= elisa_v1.id %>"><%= elisa_v1.id %></option>
+  <% end %>
+</select> -->
+
+
+<table>
+  <tr>
+    <th>Catalog number</th>
+    <th>Species</th>
+    <th>Target name</th>
+    <th>Revision date</th>
+
+  </tr>
+
+<% @elisa_v1s.each do |elisa_v1| %>
+  <tr>
+    <td><%= elisa_v1.catalog_number %></td>
+    <td><%= elisa_v1.species %></td>
+    <td><%= elisa_v1.target_name %></td>
+    <td><%= elisa_v1.revision_date %></td>
+
+
+    <td><%= link_to 'Show', elisa_v1 %></td>
+    <td><%= link_to 'Edit', edit_elisa_v1_path(elisa_v1) %></td>
+    <td><%= link_to 'Destroy', elisa_v1, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Elisa v1', new_elisa_v1_path %>

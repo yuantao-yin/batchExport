@@ -1,0 +1,303 @@
+<style type="text/css">
+    <!--
+    .style1 {
+        color: #FF0033;
+        font-style: italic;
+    }
+    -->
+</style>
+<p align="right"><strong>RayBio<sup>®</sup> <%= @elisa_v1.species %> <%= @elisa_v1.target_name %>
+  <br />
+  ELISA Kit</strong></p>
+<br />
+<br />
+<p align="right"><strong>User Manual
+  <br />
+  (Revised <%= @elisa_v1.revision_date %>)</strong></p>
+<p align="right"><strong>RayBio<sup>®</sup> <%= @elisa_v1.species %> <%= @elisa_v1.target_name %> ELISA Kit Protocol </strong>
+  <br />
+  <br />
+  (Cat#: <%= @elisa_v1.catalog_number %>)</p>
+<br />
+<p align="right"><img src="http://www.raybiotech.com/files/images/RayBiotech-R-Logo.jpg" width="96" height="92" /><strong>RayBiotech, Inc.</strong></p>
+<p align="right">ISO 13485 Certified</p>
+<br />
+<br />
+<br />
+<p><strong>Tel: 1-888-494-8555 (Toll  Free) or 770-729-2992; Fax:770-206-2393;  Web: <a href="http://www.raybiotech.com">www.raybiotech.com</a>; Email: <a href="mailto:info@raybiotech.com">info@raybiotech.com </a></strong></p>
+<p>&nbsp;</p>
+<p align="center"><img src="http://www.raybiotech.com/files/images/RayBiotech-R-Logo.jpg" width="96" height="92" /><br />
+  RayBiotech, Inc.<br />
+  ________________________________________</p>
+<p align="center"><strong>RayBio® <%= @elisa_v1.species %> <%= @elisa_v1.target_name %>
+  <br />
+  ELISA  Kit Protocol</strong></p>
+<br />
+<p align="center"><strong><u>TABLE  OF CONTENTS</u></strong></p>
+<br />
+<table align="center" width="70%">
+  <tbody><tr><td width="37%"></td>
+    <td align="left" width="23%">
+      I.    Introduction.......................................<br />
+      II.   Reagents..........................................<br />
+      III.  Storage...........................................<br />
+      IV.   Additional Materials Required.........<br />
+      V.    Reagent Preparation.........................<br />
+      VI.   Assay Procedure............................<br />
+      VII.  Assay Procedure Summary............<br />
+      VIII. Calculation of Results<br />
+      A.   Typical Data....................................<br />
+      B.   Sensitivity.........................................<br />
+      C.   Recovery.........................................<br />
+      D.   Linearity..........................................<br />
+      E.   Reproducibility.................................<br />
+      F.   Specificity........................................<br />
+      IX.   References.....................................<br />
+      X.    Troubleshooting Guide ....................
+    </td>
+    <td align="left" width="40%">
+      ......2<br />
+      ......3<br />
+      ......3<br />
+      ......3<br />
+      ......4<br />
+      ......6<br />
+      ......7<br />
+      <br />
+      ......8<br />
+      ......8<br />
+      ......9<br />
+      ......9<br />
+      ......9<br />
+      ......10<br />
+      ......10<br />
+      ......11<br />
+    </td>
+  </tr></tbody></table><br />
+<p><strong>I.  INTRODUCTION</strong><br />
+<p><%= @elisa_v1.introduction %><br />
+</p>
+<p><strong>II. REAGENTS</strong></p>
+<ol>
+  <li><%= @elisa_v1.target_name %> Microplate (Item A): 96 wells (12 strips x 8 wells) coated with anti-<%= @elisa_v1.species %> <%= @elisa_v1.target_name %>.</li>
+  <li>Wash Buffer Concentrate (20x) (Item B): 25 ml of 20x concentrated solution.</li>
+  <li>Standards (Item C): 2 vials of <%= @elisa_v1.species %> <%= @elisa_v1.target_name %>.</li>
+  <li>Assay Diluent (Item E): 2 bottles of 15 ml 5x concentrated buffer. For Sample and reagent diluent.</li>
+  <li>Detection Antibody IgG (Item F): 2 vial of biotinylated anti-<%= @elisa_v1.species %> <%= @elisa_v1.target_name %> (each vial is enough to assay half microplate).</li>
+  <li>HRP-Streptavidin Concentrate (Item G): 200 µl <%= @elisa_v1.hrp_concentrationX %>x concentrated HRP-conjugated streptavidin.</li>
+  <li>TMB One-Step Substrate Reagent (Item H): 12 ml of 3,3’,5,5’-tetramethylbenzidine (TMB) in buffer solution.</li>
+  <li>Stop Solution (Item I): 8 ml of 0.2 M sulfuric acid.<br />
+  </li>
+</ol>
+<p><strong>III. STORAGE</strong></p>
+<p>May be stored for up to 6 months at 2° to 8°C from the date of shipment. Standard should be stored at -20°C or -80°C (recommended at –80°C) after reconstitution. Opened Microplate Wells or reagents may be store for up to 1 month at 2° to 8°C. Return unused wells to the pouch containing desiccant pack, reseal along entire edge.<br />
+  Note: the kit can be used within one year if the whole kit is stored at -20°C. Avoid repeated freeze-thaw cycles.
+  <br />
+<p><strong>IV. ADDITIONAL MATERIALS REQUIRED</strong>
+<ol>
+  <li>Microplate reader capable of measuring absorbance at 450 nm.</li>
+  <li>Precision pipettes to deliver 2 l to 1 ml volumes.</li>
+  <li>Adjustable 1-25 ml pipettes for reagent preparation.</li>
+  <li>100 ml and 1 liter graduated cylinders.</li>
+  <li>Absorbent paper.</li>
+  <li>Distilled or deionized water.</li>
+  <li>Log-log graph paper or computer and software for ELISA data analysis.</li>
+  <li>Tubes to prepare standard or sample dilutions.<br />
+  </li>
+</ol>
+<p><strong>V. REAGENT PREPARATION</strong>
+<ol>
+  <li>Bring all reagents and samples to room temperature (18 - 25°C) before use.<br /><br />
+  </li>
+  <li>5x Assay Diluent (Item E) should be diluted 5-fold with deionized or distilled water before use.<br /><br /></li>
+  <li>Sample dilution: 1x Assay Diluent (Item E) should be used for dilution of serum/plasma samples.
+    <br /><br />Suggested dilution for normal serum/plasma: <%= @elisa_v1.suggested_dilution %> fold*.
+    <br /><br /><%= @elisa_v1.example_dilution %>
+    <br /><br />*Please note that levels of the target protein may vary between different specimens. Optimal dilution factors for each sample must be determined by the investigator.<br /><br />
+  </li>
+  <li>Preparation of standard: Briefly spin the vial of Item C and then add <%= @elisa_v1.vol_assay_dil_to_c %> µl 1x Assay Diluent (Item E) into Item C vial to prepare a <%= @elisa_v1.recons_std_concent %> ng/ml standard solution.  Dissolve the powder thoroughly by a gentle mix.  Add <%= @elisa_v1.std_vol_add %> µl <%= @elisa_v1.target_name %> standard (<%= @elisa_v1.recons_std_concent %> ng/ml) from the vial of Item C, into a tube with <%= @elisa_v1.f_tube_vol %> µl 1x Assay Diluent (Item E) to prepare a <%= @elisa_v1.std_1_concent %> <%= @elisa_v1.std_concent_units %> standard solution.  Pipette <%= @elisa_v1.tube_start_vol %> µl 1x Assay Diluent (Item E) into each tube. Use the <%= @elisa_v1.std_1_concent %> <%= @elisa_v1.std_concent_units %> standard solution to produce a dilution series (shown below). Mix each tube thoroughly before the next transfer. The 1x Assay Diluent (Item E) serves as the zero standard (0 ng/ml).<br /><br /><table align="center"><tbody><tr><td width="17%"><p><%= @elisa_v1.std_vol_add %> µl Standard + <%= @elisa_v1.f_tube_vol %> µl</p>
+  </td><td width="2%">
+    <td width="4%"></td>
+    <td width="6%"><%= @elisa_v1.dil_series_vol %> µl</td>
+    <td width="3%"></td>
+    <td width="6%"><%= @elisa_v1.dil_series_vol %> µl</td>
+    <td width="2%"></td>
+    <td width="7%"><%= @elisa_v1.dil_series_vol %> µl</td>
+    <td width="1%"></td>
+    <td width="7%"><%= @elisa_v1.dil_series_vol %> µl</td>
+    <td width="2%"></td>
+    <td width="6%"><%= @elisa_v1.dil_series_vol %> µl</td>
+    <td width="2%"></td>
+    <td width="35%"><%= @elisa_v1.dil_series_vol %> µl</td>
+  </tr><tr><td align="center" colspan="14"><img src="http://www.raybiotech.com/files/images/Dilution-Series-Vials.jpg" alt="Dilution Series"/></td>
+  </tr><tr>
+    <td colspan="14">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<%= @elisa_v1.std_1_concent %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @elisa_v1.std_2_concent %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<%= @elisa_v1.std_3_concent %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @elisa_v1.std_4_concent %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @elisa_v1.std_5_concent %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @elisa_v1.std_6_concent %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @elisa_v1.std_7_concent %>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 0</td>
+  </tr>
+  <tr>
+    <td colspan="14">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @elisa_v1.std_concent_units %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @elisa_v1.std_concent_units %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @elisa_v1.std_concent_units %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @elisa_v1.std_concent_units %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @elisa_v1.std_concent_units %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @elisa_v1.std_concent_units %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @elisa_v1.std_concent_units %>&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @elisa_v1.std_concent_units %></td>
+  </tr>
+  </tbody></table>
+    <br /><br /></li>
+  <li>If the Wash Concentrate (20x) (Item B) contains visible crystals, warm to room temperature and mix gently until dissolved. Dilute 20 ml of Wash Buffer Concentrate into deionized or distilled water to yield 400 ml of 1x Wash Buffer.<br /><br /></li>
+  <li>Briefly spin the Detection Antibody vial (Item F) before use. Add 100 l of 1x Assay Diluent into the vial to prepare a detection antibody concentrate. Pipette up and down to mix gently (the concentrate can be stored at 4°C for 5 days).  The detection antibody concentrate should be diluted <%= @elisa_v1.antibody_dil_fold %>-fold with 1x Assay Diluent (Item E) and used in step 4 of Part VI Assay Procedure.<br /><br /></li>
+  <li>Briefly spin the HRP-Streptavidin concentrate vial (Item G) and pipette up and down to mix gently before use.  HRP-Streptavidin concentrate should be diluted <%= @elisa_v1.hrp_concentrationX %>-fold with 1x Assay Diluent (Item E).<br /><br /><%= @elisa_v1.dil_exp_hrp %><br /><br />
+  </li>
+</ol>
+<p><strong>VI. ASSAY PROCEDURE</strong>
+<ol>
+  <li>Bring all reagents and samples to room temperature (18 - 25°C) before  use. It is recommended that all standards and samples be run at least in  duplicate.<br /><br />
+  </li>
+  <li>Add  100 ml of each standard (see Reagent Preparation step  2) <strong></strong>and sample into appropriate wells. Cover well and incubate for 2.5  hours at room temperature or over night at 4°C with gentle shaking.<br /><br /></li>
+  <li>Discard the solution and wash 4 times with 1x Wash Solution. Wash by filling each well with Wash Buffer (300 ml) using a multi-channel Pipette or autowasher. Complete removal of  liquid at each step is essential  to good performance. After the last wash, remove any remaining Wash Buffer by aspirating or  decanting. Invert the plate and blot it against clean paper towels.<br /><br />
+  </li>
+  <li>Add  100 ml of 1x prepared biotinylated antibody (Reagent  Preparation step 6) to each well. Incubate for 1 hour at room temperature with  gentle shaking.<br />
+    <br /></li>
+  <li>Discard  the solution. Repeat the wash as in step 3.<br /><br /></li>
+  <li>Add  100 ml of prepared Streptavidin solution (see Reagent  Preparation step 7) to each well. Incubate for 45 minutes at room temperature  with gentle shaking.<br /><br /></li>
+  <li>Discard  the solution. Repeat the wash as in step 3.<br /><br /></li>
+  <li>Add  100 ml of TMB One-Step Substrate Reagent (Item H) to  each well. Incubate for 30 minutes at room temperature in the dark with gentle  shaking.<br /><br /></li>
+  <li>Add 50 ml of Stop Solution (Item I)  to each well. Read at 450 nm immediately.<br /><br /></li>
+</ol>
+<p><strong>VII. ASSAY PROCEDURE SUMMARY</strong></p>
+<ol>
+  <li>Prepare all reagents, samples and standards as instructed.<br />
+    <br />
+  </li>
+  <li>Add 100 µl standard or sample to each well. Incubate 2.5 hours at room temperature or over night at 4°C.
+    <br />
+    <br />
+  </li>
+  <li>Add 100 µl prepared biotin antibody to each well. Incubate 1 hour at room temperature.<br />
+    <br />
+  </li>
+  <li>Add 100 µl prepared Streptavidin solution. Incubate 45 minutes at room temperature.
+    <br />
+    <br />
+  </li>
+  <li>Add 100 µl TMB One-Step Substrate Reagent to each well. Incubate 30 minutes at room temperature.
+    <br />
+    <br />
+  </li>
+  <li>Add 50 µl Stop Solution to each well. Read at 450 nm immediately.
+    <br />
+    <br />
+</ol>
+<p><strong>VIII. CALCULATION OF RESULTS</strong><br />
+</p>
+<p>Calculate the mean absorbance for each set of duplicate standards, controls and samples, and subtract the average zero standard optical density. Plot the standard curve on log-log graph paper or using Sigma plot software, with standard concentration on the x-axis and absorbance on the y-axis. Draw the best-fit straight line through the standard points.<br />
+</p><p><strong>A. TYPICAL DATA</strong><br />
+</p>
+<p>These standard curves are for demonstration only. A standard curve must be run with each assay.</p><br /><br /><p align="center"><img src="http://www.raybiotech.com/files/images/Curves/ELH-IGG-001.jpg" height="270" alt="ELISA Standard Curve"/><br />
+  <br />
+</p>
+<p><strong>B. SENSITIVITY</strong><br />
+</p>
+<p>RayBiotech tested the minimum detectable dose of <%= @elisa_v1.target_name %> to be <%= @elisa_v1.sensitivity %> using this kit.<br />
+</p>
+<p><strong>C. SPIKING & RECOVERY</strong><br /></p><p>Recovery was determined by spiking various levels of human IgG into human serum or plasma. Mean recoveries are as follows:<br />
+</p>
+<table width="100%"><tbody><tr><td><strong>Sample Type</strong></td><td><strong>Average % Recovery</strong></td><td><strong>Range (%)</strong></td></tr><tr><td>Serum</td><td><%= @elisa_v1.serum_avg_recovery %></td><td><%= @elisa_v1.serum_range %></td></tr><tr><td>Plasma</td><td><%= @elisa_v1.plasma_avg_recovery %></td><td><%= @elisa_v1.plasma_range %></td></tr><tr><td>Cell culture media</td><td><%= @elisa_v1.cell_avg_recovery %></td><td><%= @elisa_v1.cell_range %></td></tr></tbody></table>
+<p><strong>D. LINEARITY</strong>
+  <br /></p>
+<table width="100%"><tbody><tr><td><strong>Sample Type</strong></td><td><strong>Average % of Expected</strong></td><td><strong>Range (%)</strong></td></tr><tr><td rowspan="2">Serum</td><td><%= @elisa_v1.serum_avg_expect_1_2 %> (1:2 dilution)</td><td><%= @elisa_v1.serum_range_1_2 %> (1:2 dilution)</td></tr><tr><td><%= @elisa_v1.serum_avg_expect_1_4 %> (1:4 dilution)</td><td><%= @elisa_v1.serum_range_1_4 %> (1:4 dilution)</td></tr><tr><td rowspan="2">Plasma</td><td><%= @elisa_v1.plasma_avg_expect_1_2 %> (1:2 dilution)</td><td><%= @elisa_v1.plasma_range_1_2 %> (1:2 dilution)</td></tr><tr><td><%= @elisa_v1.plasma_avg_expect_1_4 %> (1:4 dilution)</td><td><%= @elisa_v1.plasma_range_1_4 %> (1:4 dilution)</td></tr><tr><td rowspan="2">Cell culture media</td><td><%= @elisa_v1.cell_avg_expect_1_2 %> (1:2 dilution)</td><td><%= @elisa_v1.cell_range_1_2 %> (1:2 dilution)</td></tr><tr><td><%= @elisa_v1.cell_avg_expect_1_4 %> (1:4 dilution)</td><td><%= @elisa_v1.cell_range_1_4 %> (1:4 dilution)</td></tr></tbody></table>
+<p><strong>E. REPRODUCIBILITY</strong><br />
+</p>
+<p>Intra-Assay CV%: <10%</p><p>Inter-Assay CV%: <12%<br />
+</p>
+<p><strong>F. SPECIFICITY</strong><br />
+</p>
+<p><%= @elisa_v1.specificity %></p>
+<p><strong>IX. REFERENCES</strong><br />
+</p>
+<p><%= @elisa_v1.references %></p>
+<p><strong>X. TROUBLESHOOTING GUIDE</strong><br />
+</p>
+<table width="100%">
+  <tr>
+    <td><p><strong>Problem</strong></p></td>
+    <td><p><strong>&nbsp;</strong></p></td>
+    <td><p><strong>Cause</strong></p></td>
+    <td><p><strong>&nbsp;</strong></p></td>
+    <td><p><strong>Solution</strong></p></td>
+  </tr>
+  <tr>
+    <td><p>1. Poor standard curve</p></td>
+    <td><p>&nbsp;</p></td>
+    <td><p>1. Inaccurate pipetting</p></td>
+    <td><p>&nbsp;</p></td>
+    <td><p>1. Check pipettes</p></td>
+  </tr>
+  <tr>
+    <td><p>&nbsp;</p></td>
+    <td><p>&nbsp;</p></td>
+    <td><p>2. Improper standard dilution</p></td>
+    <td><p>&nbsp;</p></td>
+    <td><p>2. Ensure a brief spin of Item C and dissolve the powder thoroughly by a gentle mix.</p></td>
+  </tr>
+  <tr>
+    <td><p>2. Low signal</p></td>
+    <td><p>&nbsp;</p></td>
+    <td><p>1.Too brief incubation times</p></td>
+    <td><p>&nbsp;</p></td>
+    <td><p>1. Ensure sufficient incubation time; assay procedure step 2 may change to over night</p></td>
+  </tr>
+  <tr>
+    <td><p>&nbsp;</p></td>
+    <td><p>&nbsp;</p></td>
+    <td><p>2. Inadequate reagent volumes or improper dilution</p></td>
+    <td><p>&nbsp;</p></td>
+    <td><p>2. Check pipettes and ensure correct preparation</p></td>
+  </tr>
+  <tr>
+    <td><p>3. Large CV</p></td>
+    <td><p>&nbsp;</p></td>
+    <td><p>1. Inaccurate pipetting </p></td>
+    <td><p>&nbsp;</p></td>
+    <td><p>1. Check pipettes</p></td>
+  </tr>
+  <tr>
+    <td><p>4. High background</p></td>
+    <td><p>&nbsp;</p></td>
+    <td><p>1. Plate is insufficiently washed</p></td>
+    <td><p>&nbsp;</p></td>
+    <td><p>1. Review the manual for proper wash. If using  a plate washer, check that all ports are unobstructed.</p></td>
+  </tr>
+  <tr>
+    <td><p>&nbsp;</p></td>
+    <td><p>&nbsp;</p></td>
+    <td><p>2. Contaminated wash buffer</p></td>
+    <td><p>&nbsp;</p></td>
+    <td><p>2. Make fresh wash buffer</p></td>
+  </tr>
+  <tr>
+    <td><p>5. Low sensitivity</p></td>
+    <td><p>&nbsp;</p></td>
+    <td><p>1. Improper storage of the ELISA kit</p></td>
+    <td><p>&nbsp;</p></td>
+    <td><p>1. Store your standard <-20°C after reconstitution, others at 4°C. Keep substrate solution protected from light </p></td>
+  </tr>
+  <tr>
+    <td><p>&nbsp;</p></td>
+    <td width="7%"><p>&nbsp;</p></td>
+    <td><p>2. Stop solution</p></td>
+    <td width="7%"><p>&nbsp;</p></td>
+    <td><p>2. Stop solution should be added to each well before measure</p></td>
+  </tr>
+</table><br />
+<p>RayBio<sup>®</sup> ELISA Kits<br />
+  <br />
+  Over 1,000 ELISA kits available, visit www.raybiotech.com for details.
+</p>
+<br />
+<br />
+</p><p align="center">This product is for research use only.</p>
+<p align="center"><br />
+  <img src="http://www.raybiotech.com/files/images/RayBiotech-R-Logo.jpg" alt="RayBiotech R Logo" width="96" height="92" /></p>
+<p align="center"><span class="style1">©2004  RayBiotech, Inc.</span><br />
+</p>
+</body>
+</html>
+
+
+<%= link_to 'Edit', edit_elisa_v1_path(@elisa_v1) %> |
+<%= link_to 'Back', elisa_v1s_path %>

@@ -1,0 +1,197 @@
+<%= form_for(@elisa_v1) do |f| %>
+  <% if @elisa_v1.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@elisa_v1.errors.count, "error") %> prohibited this elisa_v1 from being saved:</h2>
+
+      <ul>
+      <% @elisa_v1.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :catalog_number %><br />
+    <%= f.text_field :catalog_number %>
+  </div>
+  <div class="field">
+    <%= f.label :species %><br />
+    <%= f.text_field :species %>
+  </div>
+  <div class="field">
+    <%= f.label :target_name %><br />
+    <%= f.text_field :target_name %>
+  </div>
+  <div class="field">
+    <%= f.label :revision_date %><br />
+    <%= f.text_field :revision_date %>
+  </div>
+  <div class="field">
+    <%= f.label :introduction %><br />
+    <%= f.text_field :introduction %>
+  </div>
+  <div class="field">
+    <%= f.label :hrp_concentrationX %><br />
+    <%= f.text_field :hrp_concentrationX %>
+  </div>
+  <div class="field">
+    <%= f.label :suggested_dilution %><br />
+    <%= f.text_field :suggested_dilution %>
+  </div>
+  <div class="field">
+    <%= f.label :example_dilution %><br />
+    <%= f.text_field :example_dilution %>
+  </div>
+  <div class="field">
+    <%= f.label :vol_assay_dil_to_c %><br />
+    <%= f.text_field :vol_assay_dil_to_c %>
+  </div>
+  <div class="field">
+    <%= f.label :recons_std_concent %><br />
+    <%= f.text_field :recons_std_concent %>
+  </div>
+  <div class="field">
+    <%= f.label :std_vol_add %><br />
+    <%= f.text_field :std_vol_add %>
+  </div>
+  <div class="field">
+    <%= f.label :f_tube_vol %><br />
+    <%= f.text_field :f_tube_vol %>
+  </div>
+  <div class="field">
+    <%= f.label :std_concent_units %><br />
+    <%= f.text_field :std_concent_units %>
+  </div>
+  <div class="field">
+    <%= f.label :tube_start_vol %><br />
+    <%= f.text_field :tube_start_vol %>
+  </div>
+  <div class="field">
+    <%= f.label :dil_series_vol %><br />
+    <%= f.text_field :dil_series_vol %>
+  </div>
+  <div class="field">
+    <%= f.label :std_1_concent %><br />
+    <%= f.text_field :std_1_concent %>
+  </div>
+  <div class="field">
+    <%= f.label :std_2_concent %><br />
+    <%= f.text_field :std_2_concent %>
+  </div>
+  <div class="field">
+    <%= f.label :std_3_concent %><br />
+    <%= f.text_field :std_3_concent %>
+  </div>
+  <div class="field">
+    <%= f.label :std_4_concent %><br />
+    <%= f.text_field :std_4_concent %>
+  </div>
+  <div class="field">
+    <%= f.label :std_5_concent %><br />
+    <%= f.text_field :std_5_concent %>
+  </div>
+  <div class="field">
+    <%= f.label :std_6_concent %><br />
+    <%= f.text_field :std_6_concent %>
+  </div>
+  <div class="field">
+    <%= f.label :std_7_concent %><br />
+    <%= f.text_field :std_7_concent %>
+  </div>
+  <div class="field">
+    <%= f.label :antibody_dil_fold %><br />
+    <%= f.text_field :antibody_dil_fold %>
+  </div>
+  <div class="field">
+    <%= f.label :dil_exp_hrp %><br />
+    <%= f.text_field :dil_exp_hrp %>
+  </div>
+  <div class="field">
+    <%= f.label :sensitivity %><br />
+    <%= f.text_field :sensitivity %>
+  </div>
+  <div class="field">
+    <%= f.label :serum_avg_recovery %><br />
+    <%= f.text_field :serum_avg_recovery %>
+  </div>
+  <div class="field">
+    <%= f.label :serum_range %><br />
+    <%= f.text_field :serum_range %>
+  </div>
+  <div class="field">
+    <%= f.label :plasma_avg_recovery %><br />
+    <%= f.text_field :plasma_avg_recovery %>
+  </div>
+  <div class="field">
+    <%= f.label :plasma_range %><br />
+    <%= f.text_field :plasma_range %>
+  </div>
+  <div class="field">
+    <%= f.label :cell_avg_recovery %><br />
+    <%= f.text_field :cell_avg_recovery %>
+  </div>
+  <div class="field">
+    <%= f.label :cell_range %><br />
+    <%= f.text_field :cell_range %>
+  </div>
+  <div class="field">
+    <%= f.label :serum_avg_expect_1_2 %><br />
+    <%= f.text_field :serum_avg_expect_1_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :serum_avg_expect_1_4 %><br />
+    <%= f.text_field :serum_avg_expect_1_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :serum_range_1_2 %><br />
+    <%= f.text_field :serum_range_1_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :serum_range_1_4 %><br />
+    <%= f.text_field :serum_range_1_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :plasma_avg_expect_1_2 %><br />
+    <%= f.text_field :plasma_avg_expect_1_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :plasma_avg_expect_1_4 %><br />
+    <%= f.text_field :plasma_avg_expect_1_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :plasma_range_1_2 %><br />
+    <%= f.text_field :plasma_range_1_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :plasma_range_1_4 %><br />
+    <%= f.text_field :plasma_range_1_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :cell_avg_expect_1_2 %><br />
+    <%= f.text_field :cell_avg_expect_1_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :cell_avg_expect_1_4 %><br />
+    <%= f.text_field :cell_avg_expect_1_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :cell_range_1_2 %><br />
+    <%= f.text_field :cell_range_1_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :cell_range_1_4 %><br />
+    <%= f.text_field :cell_range_1_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :specificity %><br />
+    <%= f.text_field :specificity %>
+  </div>
+  <div class="field">
+    <%= f.label :references %><br />
+    <%= f.text_field :references %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
